@@ -16,3 +16,7 @@ This repository contains my daily web development practice files.
 - VS Code
 - Git & GitHub
 - Live Server
+
+## Connect with me:
+- LinkedIn: https://www.linkedin.com/in/furqan-khalid-9371b6408
+- GitHub: https://github.com/furqankhalid-git
