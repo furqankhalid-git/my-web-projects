@@ -1,4 +1,5 @@
-document.getElementById("calculateBtn").addEventListener("click", function() {
+document.getElementById("calculateBtn").addEventListener("click", function() 
+{
     let name = document.getElementById("name").value;
     let marks1 = Number(document.getElementById("marks1").value);
     let marks2 = Number(document.getElementById("marks2").value);
