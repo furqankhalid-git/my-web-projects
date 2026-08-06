@@ -58,3 +58,4 @@ function checkAnswer(selected) {
 }
 
 loadQuestion();
+
