@@ -1,44 +1,54 @@
+import { useState } from 'react';
 import './App.css';
 
-import { useState } from 'react';
-
 function App() {
-  const [tasks, setTasks] = useState([]);
-  const [input, setInput] = useState('');
+  const [city, setCity] = useState('');
+  const [weather, setWeather] = useState(null);
+  const [cityName, setCityName] = useState('');
 
-  function addTask() {
-    if (input === '') return;
-    setTasks([...tasks, input]);
-    setInput('');
-  }
+  function searchWeather() {
+    fetch("https://geocoding-api.open-meteo.com/v1/search?name=" + city)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        if (!data.results) {
+          alert("City not found");
+          return;
+        }
+        setCityName(data.results[0].name + ", " + data.results[0].country);
 
-  function deleteTask(index) {
-    let newTasks = tasks.filter((task, i) => i !== index);
-    setTasks(newTasks);
+        let lat = data.results[0].latitude;
+        let lon = data.results[0].longitude;
+
+        fetch("https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + lon + "&current_weather=true")
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            setWeather(data.current_weather);
+          });
+      });
   }
 
   return (
     <div className="container">
-    <div>
-      <h1>To-Do List</h1>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Enter a task"
+      <h1>Weather App</h1>
+      <input type="text" placeholder="Enter city name" value={city}
+        onChange={(e) => setCity(e.target.value)}
       />
-      <button className="add-btn" onClick={addTask}>Add Task</button>
-      <ul>
-        {tasks.map((task, index) => (
-          <li key={index}>
-            {task}
-            <button className="delete-btn" onClick={() => deleteTask(index)}>Delete</button>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <button onClick={searchWeather}>Search</button>
+      {weather && (
+       <div className="weather-result">
+        <h2>{cityName}</h2>
+        <p className="temperature">{weather.temperature}°C</p>
+        <p>Wind Speed: {weather.windspeed} km/h</p>
+       </div>
+)}
     </div>
   );
 }
+
+
 
 export default App;
