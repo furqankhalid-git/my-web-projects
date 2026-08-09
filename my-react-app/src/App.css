@@ -8,6 +8,10 @@ html {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #f0f2f5;
@@ -222,4 +226,48 @@ body {
   text-align: center;
   padding: 20px;
   font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links a {
+    margin-left: 15px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .skills {
+    padding: 60px 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
