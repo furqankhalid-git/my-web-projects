@@ -131,17 +131,8 @@ reservationForm.addEventListener(
             `Guests: ${guests}%0A%0A` +
             `Thank you!`;
         /*
-            IMPORTANT:
-
-            Replace this number with the restaurant
+            Will replace this number with the restaurant
             owner's actual WhatsApp number.
-
-            Format:
-            Country code + number
-            without +, spaces, or dashes.
-
-            Example:
-            923001234567
         */
         const restaurantWhatsApp =
             "923001234567";
