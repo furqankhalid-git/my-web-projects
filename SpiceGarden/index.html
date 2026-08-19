@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Spice Garden — authentic Pakistani and Continental cuisine made with fresh ingredients.">
+
+    <title>Spice Garden | Pakistani & Continental Cuisine</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+        <a href="#home" class="logo">Spice <span>Garden</span></a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#reservation" class="nav-link">Reservation</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-label">
+                    Pakistani & Continental Cuisine
+                </p>
+                <h1>
+                    Where Every Meal
+                    <span>Tells a Story.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Experience authentic flavors, fresh ingredients,
+                    and memorable dining at Spice Garden.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Our Menu
+                    </a>
+                    <a href="#reservation" class="btn btn-outline">
+                        Reserve a Table
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-scroll">
+                <span></span>
+                Scroll to explore
+            </div>
+
+        </section>
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section class="intro">
+            <div class="intro-content">
+                <p class="section-label">
+                    Welcome to Spice Garden
+                </p>
+
+                <h2>
+                    Good Food.
+                    <span>Good Moments.</span>
+                </h2>
+
+                <p>
+                    From traditional Pakistani favorites to carefully
+                    prepared Continental dishes, our menu brings together
+                    familiar flavors and modern dining.
+                </p>
+            </div>
+
+        </section>
+        <!-- =========================
+             FEATURED DISHES
+        ========================== -->
+
+        <section class="featured" id="menu">
+            <div class="section-header">
+                <div>
+                    <p class="section-label">
+                        Our Favorites
+                    </p>
+
+                    <h2>
+                        Featured <span>Dishes</span>
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    A selection of dishes loved by our guests.
+                </p>
+            </div>
+
+            <div class="dish-grid">
+                <!-- Dish 1 -->
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/biryani.jpg" alt="Chicken Biryani">
+                        <span class="dish-category">
+                            Pakistani
+                        </span>
+                    </div>
+
+                    <div class="dish-content">
+                        <div class="dish-title-row">
+                            <h3>
+                                Chicken Biryani
+                            </h3>
+
+                            <span>
+                                Rs. 450
+                            </span>
+                        </div>
+
+                        <p>
+                            Fragrant basmati rice layered with tender
+                            chicken and aromatic traditional spices.
+                        </p>
+                    </div>
+                </article>
+                <!-- Dish 2 -->
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/karahi.jpg" alt="Chicken Karahi">
+                        <span class="dish-category">
+                            Pakistani
+                        </span>
+                    </div>
+
+                    <div class="dish-content">
+                        <div class="dish-title-row">
+                            <h3>
+                                Chicken Karahi
+                            </h3>
+                            <span>
+                                Rs. 850
+                            </span>
+                        </div>
+
+                        <p>
+                            Tender chicken cooked with tomatoes,
+                            green chilies, herbs, and traditional spices.
+                        </p>
+                    </div>
+                </article>
+                <!-- Dish 3 -->
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/steak.jpg" alt="Grilled Steak">
+                        <span class="dish-category">
+                            Continental
+                        </span>
+                    </div>
+
+                    <div class="dish-content">
+                        <div class="dish-title-row">
+                            <h3>
+                                Grilled Steak
+                            </h3>
+
+                            <span>
+                                Rs. 1,450
+                            </span>
+                        </div>
+                        <p>
+                            Juicy grilled steak served with seasoned
+                            vegetables and our signature sauce.
+                        </p>
+                    </div>
+                </article>
+                <!-- Dish 4 -->
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/pasta.jpg" alt="Creamy Alfredo Pasta">
+
+                        <span class="dish-category">
+                            Continental
+                        </span>
+                    </div>
+
+                    <div class="dish-content">
+                        <div class="dish-title-row">
+                            <h3>
+                                Creamy Alfredo Pasta
+                            </h3>
+
+                            <span>
+                                Rs. 750
+                            </span>
+                        </div>
+
+                        <p>
+                            Creamy pasta tossed with herbs, parmesan,
+                            and tender chicken.
+                        </p>
+                    </div>
+                </article>
+                <!-- Dish 5 -->
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/naan.jpg" alt="Fresh Naan">
+
+                        <span class="dish-category">
+                            Pakistani
+                        </span>
+                    </div>
+
+                    <div class="dish-content">
+                        <div class="dish-title-row">
+                            <h3>
+                                Fresh Naan
+                            </h3>
+
+                            <span>
+                                Rs. 100
+                            </span>
+                        </div>
+
+                        <p>
+                            Freshly baked naan with a soft center
+                            and lightly crisp exterior.
+                        </p>
+                    </div>
+                </article>
+                <!-- Dish 6 -->
+
+                <article class="dish-card">
+                    <div class="dish-image">
+                        <img src="images/restaurant.jpg" alt="Chef's Special">
+
+                        <span class="dish-category">
+                            Chef's Special
+                        </span>
+                    </div>
+
+                    <div class="dish-content">
+                        <div class="dish-title-row">
+                            <h3>
+                                Chef's Special
+                            </h3>
+
+                            <span>
+                                Rs. 950
+                            </span>
+                        </div>
+
+                        <p>
+                            A flavorful house specialty prepared
+                            fresh by our kitchen team.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- =========================
+     FULL MENU TABS
+========================== -->
+
+        <section class="menu-tabs" id="full-menu">
+            <div class="section-header">
+                <div>
+                    <p class="section-label">Explore More</p>
+                    <h2>Full <span>Menu</span></h2>
+                </div>
+                <p class="section-description">
+                    Browse our complete Pakistani and Continental selections.
+                </p>
+            </div>
+
+            <div class="menu-tab-buttons">
+                <button class="menu-tab-btn active" data-menu="pakistani" aria-selected="true">
+                    Pakistani Menu
+                </button>
+                <button class="menu-tab-btn" data-menu="continental" aria-selected="false">
+                    Continental Menu
+                </button>
+            </div>
+
+            <!-- Pakistani Panel -->
+            <ul class="menu-list-panel active" data-panel="pakistani">
+                <li class="menu-list-item"><span>Mutton Karahi</span><span>Rs. 1,200</span></li>
+                <li class="menu-list-item"><span>Beef Nihari</span><span>Rs. 700</span></li>
+                <li class="menu-list-item"><span>Chicken Tikka</span><span>Rs. 550</span></li>
+                <li class="menu-list-item"><span>Seekh Kebab</span><span>Rs. 500</span></li>
+                <li class="menu-list-item"><span>Chapli Kebab</span><span>Rs. 480</span></li>
+                <li class="menu-list-item"><span>Haleem</span><span>Rs. 400</span></li>
+                <li class="menu-list-item"><span>Chana Pulao</span><span>Rs. 350</span></li>
+                <li class="menu-list-item"><span>Daal Makhani</span><span>Rs. 380</span></li>
+                <li class="menu-list-item"><span>Chicken Handi</span><span>Rs. 800</span></li>
+                <li class="menu-list-item"><span>Reshmi Kebab</span><span>Rs. 520</span></li>
+                <li class="menu-list-item"><span>Aloo Gosht</span><span>Rs. 750</span></li>
+                <li class="menu-list-item"><span>Butter Chicken</span><span>Rs. 850</span></li>
+            </ul>
+
+            <!-- Continental Panel -->
+            <ul class="menu-list-panel" data-panel="continental">
+                <li class="menu-list-item"><span>Grilled Chicken Steak</span><span>Rs. 1,100</span></li>
+                <li class="menu-list-item"><span>BBQ Ribs</span><span>Rs. 1,600</span></li>
+                <li class="menu-list-item"><span>Chicken Parmesan</span><span>Rs. 900</span></li>
+                <li class="menu-list-item"><span>Spaghetti Bolognese</span><span>Rs. 700</span></li>
+                <li class="menu-list-item"><span>Fish and Chips</span><span>Rs. 950</span></li>
+                <li class="menu-list-item"><span>Chicken Caesar Salad</span><span>Rs. 600</span></li>
+                <li class="menu-list-item"><span>Mushroom Soup</span><span>Rs. 400</span></li>
+                <li class="menu-list-item"><span>Beef Lasagna</span><span>Rs. 850</span></li>
+                <li class="menu-list-item"><span>Club Sandwich</span><span>Rs. 550</span></li>
+                <li class="menu-list-item"><span>Grilled Salmon</span><span>Rs. 1,750</span></li>
+                <li class="menu-list-item"><span>Chicken Fajita Wrap</span><span>Rs. 650</span></li>
+                <li class="menu-list-item"><span>Penne Arrabiata</span><span>Rs. 700</span></li>
+            </ul>
+        </section>
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="about" id="about">
+            <div class="about-image">
+                <img src="images/about-restaurant.jpg" alt="Inside Spice Garden restaurant">
+                <div class="experience-card">
+                    <strong>
+                        10+
+                    </strong>
+
+                    <span>
+                        Years of<br>
+                        Passion
+                    </span>
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="section-label">
+                    Our Story
+                </p>
+
+                <h2>
+                    A place made for
+                    <span>good food & good company.</span>
+                </h2>
+
+                <p>
+                    At Spice Garden, we believe that great food is
+                    more than just a meal. It is about bringing people
+                    together.
+                </p>
+
+                <p>
+                    Our kitchen combines traditional Pakistani flavors
+                    with popular Continental favorites, using fresh
+                    ingredients and carefully prepared recipes.
+                </p>
+
+                <p>
+                    Whether you're joining us for a family dinner,
+                    a celebration, or a casual meal with friends,
+                    we want every visit to feel special.
+                </p>
+
+                <a href="#reservation" class="text-link">
+                    Reserve Your Table
+                    <span>→</span>
+                </a>
+            </div>
+        </section>
+        <!-- =========================
+             RESERVATION
+        ========================== -->
+
+        <section class="reservation" id="reservation">
+            <div class="reservation-wrapper">
+                <div class="reservation-content">
+                    <p class="section-label">
+                        Your Table Awaits
+                    </p>
+
+                    <h2>
+                        Reserve Your
+                        <span>Table.</span>
+                    </h2>
+
+                    <p>
+                        Planning a dinner, family gathering, or
+                        special occasion? Reserve your table in
+                        advance and we'll have everything ready for you.
+                    </p>
+
+                    <div class="reservation-info">
+                        <div>
+                            <strong>
+                                Mon - Sun
+                            </strong>
+
+                            <span>
+                                11:00 AM - 11:00 PM
+                            </span>
+                        </div>
+
+                        <div>
+                            <strong>
+                                Call Us
+                            </strong>
+
+                            <span>
+                                +92 300 1234567
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Reservation Form -->
+
+                <form class="reservation-form" id="reservation-form">
+                    <div class="form-group">
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">
+                                Date
+                            </label>
+
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">
+                                Time
+                            </label>
+
+                            <select id="time" name="time" required>
+                                <option value="">
+                                    Select time
+                                </option>
+
+                                <option>
+                                    12:00 PM
+                                </option>
+
+                                <option>
+                                    1:00 PM
+                                </option>
+
+                                <option>
+                                    2:00 PM
+                                </option>
+
+                                <option>
+                                    5:00 PM
+                                </option>
+
+                                <option>
+                                    6:00 PM
+                                </option>
+
+                                <option>
+                                    7:00 PM
+                                </option>
+
+                                <option>
+                                    8:00 PM
+                                </option>
+
+                                <option>
+                                    9:00 PM
+                                </option>
+
+                                <option>
+                                    10:00 PM
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">
+                            Number of Guests
+                        </label>
+
+                        <select id="guests" name="guests" required>
+                            <option value="">
+                                Select guests
+                            </option>
+
+                            <option>
+                                1 Guest
+                            </option>
+
+                            <option>
+                                2 Guests
+                            </option>
+
+                            <option>
+                                3 Guests
+                            </option>
+
+                            <option>
+                                4 Guests
+                            </option>
+
+                            <option>
+                                5 Guests
+                            </option>
+
+                            <option>
+                                6 Guests
+                            </option>
+
+                            <option>
+                                7 Guests
+                            </option>
+
+                            <option>
+                                8+ Guests
+                            </option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="reservation-btn">
+                        Reserve via WhatsApp
+                        <span>→</span>
+                    </button>
+
+                    <p class="form-note">
+                        Your reservation request will open in WhatsApp.
+                    </p>
+                </form>
+            </div>
+        </section>
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="contact" id="contact">
+            <div class="section-header contact-header">
+                <div>
+                    <p class="section-label">
+                        Come Visit Us
+                    </p>
+
+                    <h2>
+                        Let's make your
+                        <span>day delicious.</span>
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    We're ready to welcome you.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <span class="contact-icon">
+                        📍
+                    </span>
+
+                    <h3>
+                        Our Location
+                    </h3>
+
+                    <p>
+                        123 Main Street,<br>
+                        Islamabad, Pakistan
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">
+                        📞
+                    </span>
+
+                    <h3>
+                        Call Us
+                    </h3>
+
+                    <p>
+                        +92 300 1234567
+                    </p>
+
+                    <a href="tel:+923001234567">
+                        Call Restaurant →
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <span class="contact-icon">
+                        🕐
+                    </span>
+
+                    <h3>
+                        Opening Hours
+                    </h3>
+
+                    <p>
+                        Monday - Sunday<br>
+                        11:00 AM - 11:00 PM
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    Spice <span>Garden</span>
+                </a>
+
+                <p>
+                    Authentic Pakistani flavors,
+                    Continental favorites, and memorable
+                    dining experiences.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#menu">
+                    Menu
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#reservation">
+                    Reservation
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+            </div>
+
+            <div class="footer-contact">
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    +92 300 1234567
+                </p>
+
+                <p>
+                    Islamabad, Pakistan
+                </p>
+
+                <p>
+                    11:00 AM - 11:00 PM
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 Spice Garden. All rights reserved.
+            </p>
+
+            <a href="#home">
+                Back to top ↑
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -228,6 +228,32 @@ body {
   font-size: 0.85rem;
 }
 
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero h1 {
+    animation: fadeInDown 0.8s ease;
+}
+
+.hero h2 {
+    animation: fadeInDown 1s ease;
+}
+
+.hero p {
+    animation: fadeInDown 1.2s ease;
+}
+
+.skill-card {
+    animation: fadeInUp 0.8s ease;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
